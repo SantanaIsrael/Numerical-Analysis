@@ -1,0 +1,5 @@
+================ PROBLEMA 3.8 ====================
+Intervalo: [1.01, 1.2]
+A raiz encontrada é: 1.105
+Valor da função aplicada à raíz é: -0.0481460756501555
+Número de iterações necessário: 1
