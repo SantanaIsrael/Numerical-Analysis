@@ -1,7 +1,5 @@
-import sympy as sp
-
 # Lendo os dados do arquivo
-with open('Bisseccao/entrada.txt', 'r', encoding='utf-8') as arquivo:
+with open('Input/entradaBisc.txt', 'r', encoding='utf-8') as arquivo:
     a = arquivo.readline().strip() # primeira linha 
     b = arquivo.readline().strip() # segunda linha
     erro = arquivo.readline().strip() # terceira linha
@@ -17,10 +15,10 @@ b = float(b)
 erro = float(erro)
 
 #cria variavel para a equacao
-x = sp.symbols('x')
+x = sympy.symbols('x')
 
 #transformar f em funcao algebrica
-f = sp.sympify(funcao)
+f = sympy.sympify(funcao)
 
 # contador para monitorar as iteracoes
 cont = 0
@@ -46,7 +44,7 @@ resultado = (a + b) / 2.0
 fx = f.subs(x, resultado)
 
 # Salvando o resultado no txt "resultado":
-with open('Bisseccao/resultado.txt', 'w', encoding='utf-8') as arquivo:
+with open('Output/resultadoBisc.txt', 'w', encoding='utf-8') as arquivo:
     arquivo.write(f'================ PROBLEMA 3.8 ====================\n')
     arquivo.write(f'Intervalo: [{inf}, {sup}]\n')
     arquivo.write(f'A raiz encontrada é: {resultado}\n')
